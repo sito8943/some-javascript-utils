@@ -1,5 +1,7 @@
-import { sortBy } from "./array";
+const { sortBy } = require("./array");
 
-export const Array = {
+const Array = {
   sortBy,
 };
+
+module.exports = { Array };

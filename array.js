@@ -5,7 +5,7 @@
  * @param {boolean} asc
  * @returns
  */
-export const sortBy = (array, attribute = "id", asc = false) => {
+const sortBy = (array, attribute = "id", asc = false) => {
   return array.sort((itemA, itemB) => {
     if (Number(itemA[attribute]) > Number(itemB[attribute]))
       return !asc ? -1 : 1;
@@ -13,4 +13,8 @@ export const sortBy = (array, attribute = "id", asc = false) => {
       return !asc ? 1 : -1;
     return 0;
   });
+};
+
+module.exports = {
+  sortBy,
 };

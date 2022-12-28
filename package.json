@@ -1,12 +1,11 @@
 {
   "name": "some-javascript-utils",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "some functions for javascript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SitoNumbis/some-javascript-utils.git"
