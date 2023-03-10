@@ -20,13 +20,21 @@ const getUserLanguage = (cookie = "") => {
 
 /**
  * Scroll to a target position, default the top of the page.
- * @param {number} [target=0] - The target position to scroll to.
+ * @param {number} [targetY=0] - The target top position to scroll to.
+ * @param {number} [targetX=0] - The target left position to scroll to.
+ * @param {Node} [dealer=window] - The element who triggers the scroll.
+ * @param {string} [behavior="smooth"] - Scroll behavior
  */
-const scrollTo = (target = 0) =>
-  window.scroll({
-    top: target,
-    left: 0,
-    behavior: "smooth",
+const scrollTo = (
+  targetY = 0,
+  targetX = 0,
+  dealer = window,
+  behavior = "smooth"
+) =>
+  dealer.scroll({
+    top: targetY,
+    left: targetX,
+    behavior: behavior,
   });
 
 /**
