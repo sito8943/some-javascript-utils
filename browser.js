@@ -44,7 +44,6 @@ const scrollTo = (
  * @param {any} value - The value of the cookie.
  */
 const createCookie = (name, days, value) => {
-  let d = new Date();
   if (days) {
     var date = new Date();
     date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
