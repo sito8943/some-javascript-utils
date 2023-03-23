@@ -1,6 +1,6 @@
 {
   "name": "some-javascript-utils",
-  "version": "0.6.1",
+  "version": "0.7.1",
   "description": "some functions for javascript",
   "main": "index.js",
   "scripts": {
