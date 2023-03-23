@@ -40,30 +40,17 @@ const scrollTo = (
 /**
  * Takes a name, expiration, and value, and creates a cookie with those values
  * @param {string} name - The name of the cookie
- * @param {any} expiration - "2019-12-31 23:59:59"
+ * @param {any} days - number of days
  * @param {any} value - The value of the cookie.
  */
-const createCookie = (name, expiration, value) => {
+const createCookie = (name, days, value) => {
   let d = new Date();
-  if (typeof expiration === "string") {
-    const spaceSplit = expiration.split(" ");
-    const dashSplit = spaceSplit[0].split("-");
-    const colonSplit = spaceSplit[1].split(":");
-    d = new Date(
-      Number(dashSplit[0]),
-      Number(dashSplit[1]),
-      Number(dashSplit[2]),
-      Number(colonSplit[0]),
-      Number(colonSplit[1]),
-      Number(colonSplit[2])
-    );
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    expires = "; expires=" + date.toUTCString();
   }
-  let date = new Date();
-  if (typeof expiration !== "string") date.setDate(date.getDate() + expiration);
-  const expires = `expires=${
-    typeof expiration !== "string" ? date.toUTCString() : d.toUTCString()
-  }`;
-  document.cookie = `${name}=${value};${expires}";path=/`;
+  document.cookie = `${name}=${value || ""};${expires}";path=/`;
 };
 
 /**
