@@ -8,9 +8,9 @@ Some functions to work better with arrays, objects and more!!
 
 ### sortBy
 
-_function to sort an array_
+# sortBy
 
-How to use it?
+How to import it?
 
 ```
 import { Array } from "some-javascript-utils";
@@ -44,9 +44,9 @@ Array.sortBy(array, "id", "asc") ;
 
 ## Browser
 
-_function to get user language_
+# getUserLanguage
 
-Hot to use it?
+Hot to import it?
 
 ```
 import { Browser } from "some-javascript-utils";
@@ -73,12 +73,52 @@ const userLang = getUserLanguage();
 // if pass a string parameter will save the language to a cookie ()
 // example: "en"
 
+```
+
+# parseQueries
+
+Hot to import it?
 
 ```
 
-_function to scroll to position_
+import { Browser } from "some-javascript-utils";
+// import { parseQueries } from "some-javascript-utils";
 
-Hot to use it?
+```
+
+or
+
+```
+
+const { Browser } = "some-javascript-utils";
+// const { parseQueries } = "some-javascript-utils";
+
+```
+
+#### In Action!
+
+🔶⚠Very important⚠🔶!!
+
+_just work in browsers_
+
+```
+
+// ...imports
+
+//! using location from useLocation() hook from "react-router-dom"
+
+useEffect(() => {
+    const { search } = location // ex: [some-url]?id=1&folder=sito
+    const queryParams = parseQueries(search)
+    // queryParams will value { id: "1", folder: "sito" }
+},[location])
+
+
+```
+
+# scrollTo
+
+Hot to import it?
 
 ```
 
@@ -111,9 +151,9 @@ scrollTo(0) // go to top of the page
 
 ```
 
-_function to create a cookie_
+# createCookie
 
-Hot to use it?
+Hot to import it?
 
 ```
 
@@ -151,9 +191,9 @@ createCookie(name, expiration, value);
 
 ```
 
-_function to get a cookie value_
+# getCookie
 
-Hot to use it?
+Hot to import it?
 
 ```
 
@@ -186,11 +226,12 @@ getCookie(name);
 
 // result
 // sito (of previous example)
+
 ```
 
-_function to delete a cookie_
+# deleteCookie
 
-Hot to use it?
+Hot to import it?
 
 ```
 
@@ -223,4 +264,7 @@ deleteCookie(name);
 
 // result
 // (document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`);/
+
+```
+
 ```
