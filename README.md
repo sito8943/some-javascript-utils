@@ -46,18 +46,18 @@ Array.sortBy(array, "id", "asc") ;
 
 # getUserLanguage
 
-Hot to import it?
+How to import it?
 
 ```
 import { Browser } from "some-javascript-utils";
-// import { getUserLanguage } from "some-javascript-utils";
+// import { getUserLanguage } from "some-javascript-utils/Browser";
 ```
 
 or
 
 ```
 const { Browser } = "some-javascript-utils";
-// const { getUserLanguage } = "some-javascript-utils";
+// const { getUserLanguage } = "some-javascript-utils/Browser";
 ```
 
 #### In Action!
@@ -77,12 +77,12 @@ const userLang = getUserLanguage();
 
 # parseQueries
 
-Hot to import it?
+How to import it?
 
 ```
 
 import { Browser } from "some-javascript-utils";
-// import { parseQueries } from "some-javascript-utils";
+// import { parseQueries } from "some-javascript-utils/Browser";
 
 ```
 
@@ -91,7 +91,7 @@ or
 ```
 
 const { Browser } = "some-javascript-utils";
-// const { parseQueries } = "some-javascript-utils";
+// const { parseQueries } = "some-javascript-utils/Browser";
 
 ```
 
@@ -118,12 +118,12 @@ useEffect(() => {
 
 # scrollTo
 
-Hot to import it?
+How to import it?
 
 ```
 
 import { Browser } from "some-javascript-utils";
-// import { scrollTo } from "some-javascript-utils";
+// import { scrollTo } from "some-javascript-utils"/Browser;
 
 ```
 
@@ -132,7 +132,7 @@ or
 ```
 
 const { Browser } = "some-javascript-utils";
-// const { scrollTo } = "some-javascript-utils";
+// const { scrollTo } = "some-javascript-utils/Browser";
 
 ```
 
@@ -153,12 +153,12 @@ scrollTo(0) // go to top of the page
 
 # createCookie
 
-Hot to import it?
+How to import it?
 
 ```
 
 import { Browser } from "some-javascript-utils";
-// import { createCookie } from "some-javascript-utils";
+// import { createCookie } from "some-javascript-utils/Browser";
 
 ```
 
@@ -167,7 +167,7 @@ or
 ```
 
 const { Browser } = "some-javascript-utils";
-// const { createCookie } = "some-javascript-utils";
+// const { createCookie } = "some-javascript-utils/Browser";
 
 ```
 
@@ -193,12 +193,12 @@ createCookie(name, expiration, value);
 
 # getCookie
 
-Hot to import it?
+How to import it?
 
 ```
 
 import { Browser } from "some-javascript-utils";
-// import { getCookie } from "some-javascript-utils";
+// import { getCookie } from "some-javascript-utils/Browser";
 
 ```
 
@@ -207,7 +207,7 @@ or
 ```
 
 const { Browser } = "some-javascript-utils";
-// const { getCookie } = "some-javascript-utils";
+// const { getCookie } = "some-javascript-utils/Browser";
 
 ```
 
@@ -231,12 +231,12 @@ getCookie(name);
 
 # deleteCookie
 
-Hot to import it?
+How to import it?
 
 ```
 
 import { Browser } from "some-javascript-utils";
-// import { deleteCookie } from "some-javascript-utils";
+// import { deleteCookie } from "some-javascript-utils/Browser";
 
 ```
 
@@ -245,7 +245,7 @@ or
 ```
 
 const { Browser } = "some-javascript-utils";
-// const { deleteCookie } = "some-javascript-utils";
+// const { deleteCookie } = "some-javascript-utils/Browser";
 
 ```
 
@@ -266,5 +266,44 @@ deleteCookie(name);
 // (document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`);/
 
 ```
+
+# validation
+
+_To validates a storage key_
+
+How to import it?
+
+```
+
+import { Browser } from "some-javascript-utils";
+// import { validation } from "some-javascript-utils/Browser";
+
+```
+
+or
+
+```
+
+const { Browser } = "some-javascript-utils";
+// const { validation } = "some-javascript-utils/Browser";
+
+```
+
+#### In Action!
+
+🔶⚠Very important⚠🔶!!
+
+_just work in browsers_
+
+```
+
+// ...imports
+
+localStorage.setItem("user", "yo");
+validation("user", "local");
+
+// result
+// true
+
 
 ```

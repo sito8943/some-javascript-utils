@@ -1,3 +1,42 @@
+
+/**
+ * 
+ * @param {string} string 
+ * @param {string} storage 
+ * @param {any} value 
+ * @returns 
+ */
+const validation = (string, storage = "local", value = undefined) => {
+  if (storage === "local") {
+    if (
+      localStorage.getItem(string) !== undefined &&
+      localStorage.getItem(string) !== "undefined" &&
+      localStorage.getItem(string) !== null
+    ) {
+      if (
+        value === undefined ||
+        (value !== undefined && localStorage.getItem(string) === value)
+      )
+        return true;
+      return false;
+    }
+  } else if (storage === "session") {
+    if (
+      sessionStorage.getItem(string) !== undefined &&
+      sessionStorage.getItem(string) !== "undefined" &&
+      sessionStorage.getItem(string) !== null
+    ) {
+      if (
+        value === undefined ||
+        (value !== undefined && sessionStorage.getItem(string) === value)
+      )
+        return true;
+      return false;
+    }
+  }
+  return false;
+};
+
 /**
  *
  * @param {string} queries
@@ -99,4 +138,5 @@ module.exports = {
   getUserLanguage,
   scrollTo,
   parseQueries,
+  validation
 };
