@@ -6,6 +6,7 @@ const {
   deleteCookie,
   getUserLanguage,
   validation,
+  parseQueries,
 } = require("./browser");
 
 const Array = {
@@ -19,6 +20,7 @@ const Browser = {
   deleteCookie,
   getUserLanguage,
   validation,
+  parseQueries,
 };
 
 module.exports = { Array, Browser };
