@@ -42,7 +42,7 @@ const Browser = {
   getUserLanguage,
   validation,
   parseQueries,
-  toSlug
+
 };
 
-module.exports = { Array, Browser };
+module.exports = { Array, Browser, toSlug };
