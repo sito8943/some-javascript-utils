@@ -307,3 +307,39 @@ validation("user", "local");
 
 
 ```
+
+# toSlug
+
+_To turn a string to url slug_
+
+How to import it?
+
+```
+
+import { toSlug } from "some-javascript-utils";
+
+
+```
+
+or
+
+```
+
+const { toSlug } = "some-javascript-utils";
+
+
+```
+
+#### In Action!
+
+
+```
+
+// ...imports
+
+const urlName = toSlug("The Man on the Hills")
+
+// urlName = the-man-on-the-hills
+
+
+```
