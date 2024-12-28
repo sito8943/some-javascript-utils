@@ -1,10 +1,10 @@
 
 /**
- * 
- * @param {string} string 
- * @param {string} storage 
- * @param {any} value 
- * @returns 
+ *
+ * @param {string} string
+ * @param {string} storage
+ * @param {any} value
+ * @returns
  */
 const validation = (string, storage = "local", value = undefined) => {
   if (storage === "local") {
@@ -96,11 +96,11 @@ const scrollTo = (
  * @param {any} days - number of days
  * @param {any} value - The value of the cookie.
  */
-const createCookie = (name, days, value) => {
+const createCookie = (name, days, value, path ="/", sameSite = "Lax") => {
   var date = new Date();
   date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
   const expires = "; expires=" + date.toUTCString();
-  document.cookie = `${name}=${value || ""}${expires}";path=/`;
+  document.cookie = `${name}=${value || ""}${expires};path=${path};SameSite=${sameSite}`;
 };
 
 /**
