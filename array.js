@@ -6,7 +6,7 @@
  * @param {func} auxFunction
  * @returns
  */
-const sortBy = (array, attribute = "id", asc = false, auxFunction) => {
+const sortBy = (array, attribute = "id", asc = false, auxFunction = null) => {
   return array.sort((itemA, itemB) => {
     if (auxFunction) {
       console.assert(
