@@ -9,7 +9,7 @@ const {
   parseQueries,
 } = require("./browser");
 
-const Array = {
+const array = {
   sortBy,
 };
 
@@ -36,7 +36,7 @@ function toSlug(string) {
   return parsedStrings;
 }
 
-const Browser = {
+const browser = {
   getCookie,
   scrollTo,
   createCookie,
@@ -47,4 +47,4 @@ const Browser = {
 
 };
 
-module.exports = { Array, Browser, toSlug };
+module.exports = { array, browser, toSlug };
