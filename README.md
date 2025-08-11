@@ -13,14 +13,14 @@ Some functions to work better with arrays, objects and more!!
 How to import it?
 
 ```
-import { Array } from "some-javascript-utils";
+import { array } from "some-javascript-utils";
 // import { sortBy } from "some-javascript-utils/array";
 ```
 
 or
 
 ```
-const { Array } from "some-javascript-utils";
+const { array } from "some-javascript-utils";
 // const { sortBy } = require("some-javascript-utils/array");
 ```
 
@@ -35,7 +35,7 @@ _just work with array of objects_
 
 const array = [{ id: 5 }, { id: 2 }, { id: 3 }, { id: 6 }];
 
-Array.sortBy(array, "id", "asc") ;
+array.sortBy(array, "id", "asc") ;
 // attribute "id" and "asc" are by default
 
 // result
@@ -49,15 +49,15 @@ Array.sortBy(array, "id", "asc") ;
 How to import it?
 
 ```
-import { Browser } from "some-javascript-utils";
-// import { getUserLanguage } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { getUserLanguage } from "some-javascript-utils/browser";
 ```
 
 or
 
 ```
-const { Browser } = "some-javascript-utils";
-// const { getUserLanguage } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { getUserLanguage } = "some-javascript-utils/browser";
 ```
 
 #### In Action!
@@ -81,8 +81,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { parseQueries } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { parseQueries } from "some-javascript-utils/browser";
 
 ```
 
@@ -90,8 +90,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { parseQueries } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { parseQueries } = "some-javascript-utils/browser";
 
 ```
 
@@ -122,8 +122,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { scrollTo } from "some-javascript-utils"/Browser;
+import { browser } from "some-javascript-utils";
+// import { scrollTo } from "some-javascript-utils"/browser;
 
 ```
 
@@ -131,8 +131,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { scrollTo } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { scrollTo } = "some-javascript-utils/browser";
 
 ```
 
@@ -157,8 +157,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { createCookie } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { createCookie } from "some-javascript-utils/browser";
 
 ```
 
@@ -166,8 +166,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { createCookie } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { createCookie } = "some-javascript-utils/browser";
 
 ```
 
@@ -197,8 +197,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { getCookie } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { getCookie } from "some-javascript-utils/browser";
 
 ```
 
@@ -206,8 +206,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { getCookie } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { getCookie } = "some-javascript-utils/browser";
 
 ```
 
@@ -235,8 +235,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { deleteCookie } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { deleteCookie } from "some-javascript-utils/browser";
 
 ```
 
@@ -244,8 +244,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { deleteCookie } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { deleteCookie } = "some-javascript-utils/browser";
 
 ```
 
@@ -275,8 +275,8 @@ How to import it?
 
 ```
 
-import { Browser } from "some-javascript-utils";
-// import { validation } from "some-javascript-utils/Browser";
+import { browser } from "some-javascript-utils";
+// import { validation } from "some-javascript-utils/browser";
 
 ```
 
@@ -284,8 +284,8 @@ or
 
 ```
 
-const { Browser } = "some-javascript-utils";
-// const { validation } = "some-javascript-utils/Browser";
+const { browser } = "some-javascript-utils";
+// const { validation } = "some-javascript-utils/browser";
 
 ```
 
